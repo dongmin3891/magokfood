@@ -1,8 +1,12 @@
 import React from 'react';
+import GlobalStyles from './GlobalStyles';
 
 function Main() {
   return (
-    <div>Hello World</div>
+    <>
+        <GlobalStyles />
+        <div>Hello World</div>
+    </>
   );
 }
 
