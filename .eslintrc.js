@@ -27,6 +27,13 @@ module.exports = {
     parser: '@babel/eslint-parser',
   
     rules: {
+      "react/function-component-definition": [
+        2,
+        {
+          namedComponents: "arrow-function",
+          unnamedComponents: "arrow-function",
+        },
+      ],
       'linebreak-style': 0,
       'import/prefer-default-export': 0,
       'prettier/prettier': 0,
