@@ -1,5 +1,5 @@
 import React from 'react';
-import {BrowserRouter,Switch, Route} from 'react-router-dom';
+import {BrowserRouter,Switch, Route, Redirect} from 'react-router-dom';
 import GlobalStyles from './GlobalStyles';
 import Header from './components/home/Header';
 import Login from './components/login/Login';
@@ -19,6 +19,7 @@ const Main = () => {
                 <Route path='/login' component={Login} />
                 <Route path='/home' component={Navigation}/>
             </Switch>
+            <Redirect to='/login' />
         </BrowserRouter>
     </>
   );
