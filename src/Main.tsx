@@ -3,7 +3,7 @@ import {BrowserRouter,Switch, Route, Redirect} from 'react-router-dom';
 import GlobalStyles from './GlobalStyles';
 import Header from './components/header/Header';
 import Login from './components/login/Login';
-import Home from './components/home/Home';
+import Home from './components/home/CategoryButton';
 
 
 const Main = () => {
