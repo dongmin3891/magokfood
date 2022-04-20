@@ -1,14 +1,12 @@
 import React from 'react';
+// eslint-disable-next-line no-unused-vars
+import { MenuListType } from '../types';
 // import styled from 'styled-components';
 
+// TODO : menulist property error clear
+const MenuList = ({ menulist } : MenuListType ) :JSX.Element => {
 
-const MenuList = ({menuList}) :JSX.Element => {
-
-
-  
-
- 
-  
+  console.log("test",menulist);
 
   return (
       <>
@@ -16,8 +14,8 @@ const MenuList = ({menuList}) :JSX.Element => {
           메뉴리스트
         </div>
         <ul>
-          {menuList.map((hangOverList) => (
-            <li key={hangOverList.id}>{hangOverList.storeName}</li>
+          {menulist?.map((items : any) => (
+            <li key={items.id}>{items.storeName}</li>
           ))}
         </ul>
       </>
